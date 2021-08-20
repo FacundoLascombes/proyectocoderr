@@ -54,6 +54,7 @@
 
 .nav .contacto p:hover {
     transform: scale(1.1);
+    color: rgb(255, 0, 157);
 }
 
 .nav .contacto .menu {
@@ -93,6 +94,7 @@
 
 .nav a:hover {
     transform: scale(1.1);
+    color: rgb(255, 0, 157);
 }
 
 
@@ -219,7 +221,12 @@
     transform: scale(1.1);
 }
 
-.sectionaside .asideIndex iframe:hover {
+iframe:hover {
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+
+.hoveragran img:hover {
     transition: all 0.2s;
     transform: scale(1.1);
 }

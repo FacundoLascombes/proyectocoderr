@@ -1,0 +1,69 @@
+@mixin font-xl {
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+@mixin font-l {
+    font-family: sans-serif;
+    font-size: 32px;
+}
+
+@mixin font-m {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+@mixin font-s {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+@mixin font-xs {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+@mixin font-custom($size) {
+    font-family: sans-serif;
+    font-size: $size;
+}
+
+@mixin flex($fd, $jc, $ai, $wrap) {
+    display: flex;
+    @if $fd==row {
+        flex-direction: row;
+    }
+    @else {
+        flex-direction: column;
+    }
+    @if $jc==center {
+        justify-content: center;
+    }
+    @else if $jc==start {
+        justify-content: flex-start;
+    }
+    @else if $jc==end {
+        justify-content: flex-end;
+    }
+    @else if $jc==around {
+        justify-content: space-around;
+    }
+    @else if $jc==between {
+        justify-content: space-between;
+    }
+    @if $ai==center {
+        align-items: center;
+    }
+    @else if $ai==start {
+        align-items: flex-start;
+    }
+    @else if $ai==end {
+        align-items: flex-end;
+    }
+    @if $wrap==1 {
+        flex-wrap: wrap;
+    }
+    @else {
+        flex-wrap: nowrap;
+    }
+}

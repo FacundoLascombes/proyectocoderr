@@ -1,0 +1,26 @@
+        footer {
+            @include flex (row, center, center, 0);
+            background-color: $black;
+            width: 100%;
+            padding: 16px 40px;
+            .footer_wrapper {
+                max-width: 1440px;
+                width: 100%;
+                @include flex (row, between, center, 0);
+                color: $white;
+                .footer__logo {
+                    width: 100%;
+                    min-width: 120px;
+                    border-radius: 70px;
+                }
+            }
+        }
+        
+        @media (max-width: 890px) {
+            .footer {
+                padding: 0px;
+            }
+            .texto__footer {
+                font-size: 12px;
+            }
+        }

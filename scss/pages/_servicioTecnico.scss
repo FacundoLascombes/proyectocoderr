@@ -1,0 +1,44 @@
+.section__service {
+    min-height: 40vh;
+    @include flex (column, center, center, 0);
+    background-color: rgb(124, 124, 124);
+    .articulo__1 {
+        max-width: 1440px;
+        @include flex (row, between, start, 1);
+        padding: 40px;
+        .primer__parte {
+            text-align: start;
+            @include flex (column, start, start, 1);
+        }
+        .segunda__parte {
+            text-align: center;
+            @include flex (column, center, center, 1);
+        }
+        .button__index {
+            height: 30px;
+            width: 100px;
+            border-radius: 30px;
+            border: solid 3px;
+        }
+        .button__index:hover {
+            border-color: blue;
+        }
+    }
+    .articulo__2 {
+        @include flex (column, center, center, 1);
+        .seccion__imagenes {
+            @include flex (row, center, center, 1);
+            div {
+                a {
+                    img {
+                        height: 150px;
+                        width: 200px;
+                        margin-right: 5px;
+                        border-radius: 40px;
+                    }
+                }
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

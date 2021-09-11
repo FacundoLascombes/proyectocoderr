@@ -5,66 +5,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda 3</title>
-    <link rel="stylesheet" href="../styles/estilos.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 
-<!-- Body -->
 
-<body class="bodyTienda3">
+<body>
+    <header>
+        <div class="header_wrapper">
+            <a class="header__logo" href="../index.html"><img src="../imagesProyecto/home-footer/header.jpg" alt=""></a>
 
-    <!-- Contenedor general del header -->
-    <div class="padre">
-        <div class="headernav">
-            <header class="header">
-                <a href="../index.html"><img src="../imagesProyecto/home-footer/header.jpg" alt="logo" width="175" height="175" style="border-radius: 100px;"></a>
-            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="servicioTecnico.html">Servicio tecnico</a>
+                    </li>
+                    <li>
+                        <a href="tienda.html">Tienda</a>
+                    </li>
+                    <li>
+                        <a href="tienda.html">Bicicletas</a>
+                    </li>
+                    <li>
+                        <a href="tienda.html">Accesorios</a>
+                    </li>
+                    <li>
+                        <a href="tienda2.html">Destacados</a>
+                    </li>
+                </ul>
 
-            <!-- Barra de navegacion -->
-            <nav class="nav">
-                <a href="../index.html">Inicio</a>
-                <a href="tienda.html">Tienda</a>
-                <div class="contacto">
-                    <p>Contacto</p>
-                    <div class="menu">
-                        <ul>
-                            <li><a href="https://outlook.live.com/" target="_blank">Mail</a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-                            <li><a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="servicioTecnico.html">Servicio tecnico</a>
             </nav>
+
+            <div class="header__icons">
+                <a href="https://www.hotmail.com/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="currentColor" fill-rule="evenodd">
+                    <path fill-rule="nonzero" class="header--custom-svg" d="M21.75 7.067V6.75H2.25v.317l8.634 4.932a2.25 2.25 0 0 0 2.232 0l8.634-4.932zm0 1.727l-7.89 4.507a3.75 3.75 0 0 1-3.72 0L2.25 8.794v8.456h19.5V8.794zM.75 5.25h22.5v13.5H.75V5.25z"></path>
+                </g>
+            </svg>
+                </a>
+
+                <a href="tienda.html">
+                    <svg class="header--custom-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="currentColor" fill-rule="evenodd">
+                    <path fill-rule="nonzero" class="header--custom-svg" d="M9.005 21a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM18 21a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM6.21 6.75l1.874 7.5h10.778l1.252-7.5H6.211zm-.374-1.5h16.05l-1.754 10.5H6.912l-2.997-12H.75v-1.5h4.337l.749 3z"></path>
+                </g>
+            </svg>
+                </a>
+            </div>
         </div>
+    </header>
+    <section class="section__tienda3">
+        <article class="articulos__tienda3">
+            <div><img src="../imagesProyecto/tienda/968_medium.jpg" alt="articulo"></div>
 
-        <!-- Section principal de tienda3 con sus articulos -->
-        <section class="sectionTienda3">
-            <article class="articleTienda3">
-                <div><img src="../imagesProyecto/tienda/968_medium.jpg" alt="articulo"></div>
-
-                <div class="descripcionTienda3">
-                    <div>
-                        <h1>FUJI NEVADA 1.9</h1>
-                    </div>
-
-                    <div>
-                        <p class="letraDescripcion">Cuadro: Fuji A2-SL custom-butted alloy front triangle, Fuji A1-SL alloy rear triangle <br> Horquilla: SR Suntour SF19-XCE 29, 100mm <br> Plato/palanca: Shimano Tourney, 42/34/24T <br> Caja pedalera: Sealed cartridge bearing <br>                            Pedales: Resin platform <br> Descarrilador delantero: Shimano Tourney <br> Cambio trasero: Shimano Tourney <br> Shifters: Shimano EF41, EZ Fire, 3 x 7-speed <br> Piñón: Shimano TZ500 freewheel, 14-34T <br> Cadena: KMC HV500
-                            <br> </p>
-                    </div>
-
-                    <div class="inputCheckboxTienda3">
-                        <p><input type="checkbox" value="Envio Gratis"> Envio Gratis</p>
-                    </div>
-
-                    <div class="precioTienda3">
-                        <p>Precio $ 135.484</p>
-                    </div>
+            <div class="descripcion__compra">
+                <div>
+                    <h1>FUJI NEVADA 1.9</h1>
                 </div>
 
-                <div class="inputInfoTienda3">
-                    <h1>Necesitaremos algunos datos</h1>
+                <div>
+                    <p>Cuadro: Fuji A2-SL custom-butted alloy front triangle, Fuji A1-SL alloy rear triangle <br> Horquilla: SR Suntour SF19-XCE 29, 100mm <br> Plato/palanca: Shimano Tourney, 42/34/24T <br> Caja pedalera: Sealed cartridge bearing <br> Pedales:
+                        Resin platform <br> Descarrilador delantero: Shimano Tourney <br> Cambio trasero: Shimano Tourney <br> Shifters: Shimano EF41, EZ Fire, 3 x 7-speed <br> Piñón: Shimano TZ500 freewheel, 14-34T <br> Cadena: KMC HV500
+                        <br> </p>
+                </div>
+
+                <div>
+                    <p><input type="checkbox" value="Envio Gratis"> Envio Gratis</p>
+                </div>
+
+                <div>
+                    <p>Precio $ 135.484</p>
+                </div>
+            </div>
+
+            <div class="info__compra">
+                <div>
+                    <h3>Necesitaremos algunos datos</h3>
+                </div>
+                <div>
                     <form action="">
                         <ul>
                             <li>
@@ -119,20 +140,22 @@
                         </ul>
                     </form>
                 </div>
-            </article>
+            </div>
+        </article>
+    </section>
 
-            <!-- Footer -->
-        </section>
+    <footer>
+        <div class="footer_wrapper ">
+            <div>
+                <a href=" "><img class="footer__logo " src="../imagesProyecto/home-footer/header.jpg " alt=" "></a>
+            </div>
 
-        <footer class=" footer ">
-            <img src="../imagesProyecto/home-footer/header.jpg" alt="logo ">
+            <p class="texto__footer ">Copyright © 2021 Todos los contenidos de este Sitio (Incluyendo, pero no limitado a, texto, logotipos, contenido, fotografías, audio, botones, nombres comerciales y vídeo) están sujetos a derechos de propiedad por las leyes de Derechos de
+                autor
+            </p>
+        </div>
+    </footer>
 
-            <p style="text-align: justify;">© 2016-2021 Las fotos son a modo ilustrativo.
-                <br> La venta de cualquiera de los productos publicados está sujeta a la verificación de stock.
-                <br> Los precios online y los planes de financiación para los productos presentados/publicados son válidos exclusivamente para la compra vía internet en las páginas antes mencionadas.
-                <br> Las especificaciones técnicas y descripciones están sujetas a cambios sin previo aviso.</p>
-        </footer>
-    </div>
 </body>
 
 </html>

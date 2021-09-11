@@ -1,0 +1,5 @@
+.divisiones {
+    @include flex (row, center, center, 0);
+    color: $white;
+    border: solid whitesmoke 3px;
+}

@@ -1,0 +1,20 @@
+/* common */
+
+@import 'variables.scss';
+@import 'global.scss';
+@import 'typography.scss';
+@import 'mixins.scss';
+
+/* components */
+
+@import 'components/footer.scss';
+@import 'components/navbar.scss';
+@import 'components/beneficio.scss';
+
+/* pages */
+
+@import 'pages/index.scss';
+@import 'pages/servicioTecnico.scss';
+@import 'pages/tienda.scss';
+@import 'pages/tienda2.scss';
+@import 'pages/tienda3.scss';

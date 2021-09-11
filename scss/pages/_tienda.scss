@@ -1,0 +1,56 @@
+.articulos {
+    @include flex (row, center, center, 1);
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    padding: 16px 40px;
+    .articulo {
+        max-width: 1440px;
+        width: 500px;
+        height: 100%;
+        @include flex (row, start, start, 0);
+        color: $white;
+        padding: 20px;
+        margin: 20px;
+        background-color: rgba(66, 66, 66, 0.589);
+        border-radius: 30px;
+        min-height: 366px;
+        .button__articulo {
+            margin-top: 10%;
+            margin-left: 10%;
+            height: 60%;
+            width: 50%;
+            border-radius: 30px;
+            border: solid 5px;
+            transition: all 0.5s;
+        }
+        .button__articulo:hover {
+            border-color: blue;
+            transform: scale(1.1)
+        }
+        .titulo__texto {
+            @include flex (column, start, start, 0);
+            font-family: monospace;
+            margin: 10px;
+            font-size: 15px;
+        }
+        .img__articulo {
+            max-width: 240px;
+            border-radius: 60px;
+            background-color: white;
+        }
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 550px) {
+    .articulos {
+        flex-direction: column;
+        .articulo {
+            flex-direction: column;
+            width: 250px;
+            .img__articulo {
+                max-height: 150px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.section__tienda3 {
+    @include flex (row, center, center, 1);
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    padding: 16px 40px;
+    min-height: 700px;
+    .articulos__tienda3 {
+        max-width: 1440px;
+        @include flex (row, center, center, 1);
+        img {
+            border-radius: 40px;
+            width: 400px;
+            margin-right: 20px;
+        }
+        .descripcion__compra {
+            width: 33%;
+            color: $white;
+        }
+        .info__compra {
+            @include flex (column, center, center, 0);
+            ul {
+                li {
+                    list-style: none;
+                }
+            }
+            text-align: center;
+            color: $white;
+            width: 33%;
+        }
+    }
+}

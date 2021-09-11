@@ -1,0 +1,26 @@
+.beneficio {
+    @include flex (column, start, center, 1);
+    max-width: 250px;
+    width: 100%;
+    margin: 40px;
+    &:last-child {
+        margin-right: 0px;
+    }
+    text-align: center;
+    .beneficio__imagen {
+        @include flex (row, center, center, 0);
+        object-fit: contain;
+        width: 130px;
+        height: 130px;
+        .imagen__ben {
+            border-radius: 100px
+        }
+    }
+    h3 {
+        @include font-m;
+        font-weight: bold;
+    }
+    span {
+        font-weight: bold;
+    }
+}

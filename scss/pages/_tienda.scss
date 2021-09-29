@@ -45,11 +45,17 @@
 @media (max-width: 550px) {
     .articulos {
         flex-direction: column;
+        padding: 0px;
         .articulo {
             flex-direction: column;
-            width: 250px;
-            .img__articulo {
-                max-height: 150px;
+            justify-items: center;
+            align-items: center;
+            width: 350px;
+            margin: 10px 0px;
+            div {
+                .img__articulo {
+                    max-height: 150px;
+                }
             }
         }
     }

@@ -9,7 +9,7 @@
         @include flex (row, center, center, 1);
         img {
             border-radius: 40px;
-            width: 400px;
+            max-width: 400px;
             margin-right: 20px;
         }
         .descripcion__compra {
@@ -26,6 +26,26 @@
             text-align: center;
             color: $white;
             width: 33%;
+        }
+    }
+}
+
+@media (max-width: 1035px) {
+    .section__tienda3 {
+        .articulos__tienda3 {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img {
+                width: 350px;
+                padding: 0px;
+            }
+            .info__compra {
+                width: 100%;
+            }
+            .descripcion__compra {
+                width: 100%;
+            }
         }
     }
 }

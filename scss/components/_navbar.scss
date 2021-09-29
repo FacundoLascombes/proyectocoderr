@@ -6,33 +6,13 @@
         .header_wrapper {
             max-width: 1440px;
             width: 100%;
-            @include flex (row, between, center, 1);
+            @include flex (row, between, center, 0);
             .header__logo {
                 width: 120px;
                 img {
                     width: 100%;
                     min-width: 80px;
                     border-radius: 70px;
-                }
-            }
-            nav {
-                align-self: flex-end;
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    li {
-                        list-style: none;
-                        margin-right: 30px;
-                        &:last-child {
-                            margin-right: 0px;
-                        }
-                        a {
-                            text-decoration: none;
-                            color: $white;
-                            @include font-s;
-                            text-transform: uppercase;
-                        }
-                    }
                 }
             }
             .header__icons {
@@ -42,6 +22,20 @@
                         color: $white;
                     }
                 }
+            }
+        }
+    }
+    
+    @media (max-width: 500px) {
+        header {
+            .header_wrapper {
+                flex-direction: column;
+            }
+            .navbar {
+                align-self: flex-end;
+            }
+            .header__icons {
+                align-self: flex-start;
             }
         }
     }

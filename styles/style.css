@@ -58,7 +58,7 @@ header .header_wrapper {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 header .header_wrapper .header__logo {
   width: 120px;
@@ -68,27 +68,6 @@ header .header_wrapper .header__logo img {
   min-width: 80px;
   border-radius: 70px;
 }
-header .header_wrapper nav {
-  align-self: flex-end;
-}
-header .header_wrapper nav ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-header .header_wrapper nav ul li {
-  list-style: none;
-  margin-right: 30px;
-}
-header .header_wrapper nav ul li:last-child {
-  margin-right: 0px;
-}
-header .header_wrapper nav ul li a {
-  text-decoration: none;
-  color: #e2e2e2;
-  font-family: sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-}
 header .header_wrapper .header__icons a {
   margin-right: 20px;
 }
@@ -96,6 +75,17 @@ header .header_wrapper .header__icons a svg {
   color: #e2e2e2;
 }
 
+@media (max-width: 500px) {
+  header .header_wrapper {
+    flex-direction: column;
+  }
+  header .navbar {
+    align-self: flex-end;
+  }
+  header .header__icons {
+    align-self: flex-start;
+  }
+}
 .beneficio {
   display: flex;
   flex-direction: column;
@@ -362,12 +352,16 @@ section .beneficios {
 @media (max-width: 550px) {
   .articulos {
     flex-direction: column;
+    padding: 0px;
   }
   .articulos .articulo {
     flex-direction: column;
-    width: 250px;
+    justify-items: center;
+    align-items: center;
+    width: 350px;
+    margin: 10px 0px;
   }
-  .articulos .articulo .img__articulo {
+  .articulos .articulo div .img__articulo {
     max-height: 150px;
   }
 }
@@ -402,7 +396,7 @@ section .beneficios {
 }
 .section__tienda3 .articulos__tienda3 img {
   border-radius: 40px;
-  width: 400px;
+  max-width: 400px;
   margin-right: 20px;
 }
 .section__tienda3 .articulos__tienda3 .descripcion__compra {
@@ -421,6 +415,24 @@ section .beneficios {
 }
 .section__tienda3 .articulos__tienda3 .info__compra ul li {
   list-style: none;
+}
+
+@media (max-width: 1035px) {
+  .section__tienda3 .articulos__tienda3 {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .section__tienda3 .articulos__tienda3 img {
+    width: 350px;
+    padding: 0px;
+  }
+  .section__tienda3 .articulos__tienda3 .info__compra {
+    width: 100%;
+  }
+  .section__tienda3 .articulos__tienda3 .descripcion__compra {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
